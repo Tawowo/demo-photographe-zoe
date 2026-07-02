@@ -10,7 +10,7 @@ const icons: Record<string, string> = {
 
 export default function Services() {
   return (
-    <section className="py-24 px-6 bg-[#F5F0E8]">
+    <section id="seances" className="py-24 px-6 bg-[#F5F0E8]">
       <div className="max-w-6xl mx-auto">
         <Reveal className="text-center mb-16">
           <p className="text-sm tracking-[0.3em] uppercase text-[#C9A96E] mb-4">Mes séances</p>

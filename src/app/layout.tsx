@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
+import Navbar from "@/components/Navbar";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -23,7 +24,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr" className={`${cormorant.variable} ${inter.variable}`}>
-      <body className="bg-[#FAFAF8] text-[#2C2C2C] antialiased">{children}</body>
+      <body className="bg-[#FAFAF8] text-[#2C2C2C] antialiased overflow-x-hidden">
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

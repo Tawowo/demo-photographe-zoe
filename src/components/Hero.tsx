@@ -28,7 +28,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-cormorant text-7xl md:text-9xl font-light leading-none mb-4"
+          className="font-cormorant text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-light leading-none mb-4"
         >
           Zoé Thievin
         </motion.h1>

@@ -14,7 +14,7 @@ export default function Gallery() {
   const filtered = active === "Tous" ? galleryPhotos : galleryPhotos.filter(p => p.category === active);
 
   return (
-    <section className="py-24 px-6 bg-[#FAFAF8]">
+    <section id="portfolio" className="py-24 px-6 bg-[#FAFAF8]">
       <div className="max-w-6xl mx-auto">
         <Reveal className="text-center mb-12">
           <p className="text-sm tracking-[0.3em] uppercase text-[#C9A96E] mb-4">Portfolio</p>
@@ -35,7 +35,7 @@ export default function Gallery() {
             ))}
           </div>
         </Reveal>
-        <motion.div layout className="columns-2 md:columns-3 gap-4 space-y-4">
+        <motion.div layout className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
           <AnimatePresence>
             {filtered.map(photo => (
               <motion.div
